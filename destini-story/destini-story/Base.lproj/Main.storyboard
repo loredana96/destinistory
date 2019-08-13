@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="destini_story" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CtV-gc-igb">
+                                <rect key="frame" x="1" y="21" width="373" height="645"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqy-Aw-pYK">
+                                <rect key="frame" x="10" y="90" width="355" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="K9h-k0-uun"/>
+                                </constraints>
+                                <string key="text"> Story1: Your car has blown a tire on a winding road in the middle of nowhere with no cell phone reception. You decide to
+ hitchhike. A rusty pickup truck rumbles to a stop next to you. A man with a wide brimmed hat and soulless eyes opens the
+ passenger door for you and says: "Need a ride, boy?".</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.82744222050000005" green="0.92613189500000004" blue="0.1428544843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lb2-pf-ejV">
+                                <rect key="frame" x="10" y="468" width="355" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.47638258156387503" blue="0.34071898178300275" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="03e-GT-afF"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.49900497442083669" green="1" blue="0.21378653354160704" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lU3-a1-5bG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbz-wN-jcO">
+                                <rect key="frame" x="10" y="552" width="355" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.47638258160000002" blue="0.34071898179999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ba5-qg-vV8"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.23403167011462433" green="1" blue="0.1477420758776119" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zKU-DU-B1W"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adventure Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3br-Bd-QHv">
+                                <rect key="frame" x="20" y="60" width="335" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="KoC-Wp-a3P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
+                                <color key="textColor" red="0.96692937612533569" green="0.46814743226605721" blue="0.050026617372148655" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmd-3M-VW3">
+                                <rect key="frame" x="300" y="35" width="58" height="40"/>
+                                <color key="backgroundColor" red="0.96692937609999996" green="0.80369794280068552" blue="0.50520918214974764" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="J9G-T3-rwm"/>
+                                </constraints>
+                                <state key="normal" title="Story 1 "/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IAt-IG-BVb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bmd-3M-VW3" secondAttribute="trailing" constant="17" id="3aj-2E-afC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3br-Bd-QHv" secondAttribute="trailing" constant="20" id="8Q6-bS-ZAf"/>
+                            <constraint firstItem="CtV-gc-igb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="C2J-33-lkc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zbz-wN-jcO" secondAttribute="trailing" constant="10" id="FpX-wa-uAt"/>
+                            <constraint firstItem="zbz-wN-jcO" firstAttribute="top" secondItem="lb2-pf-ejV" secondAttribute="bottom" constant="34" id="GXJ-Dm-ykY"/>
+                            <constraint firstItem="lb2-pf-ejV" firstAttribute="top" secondItem="gqy-Aw-pYK" secondAttribute="bottom" constant="128" id="IG8-cO-4AI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CtV-gc-igb" secondAttribute="bottom" constant="1" id="IJd-Cn-GRY"/>
+                            <constraint firstItem="3br-Bd-QHv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="bks-y9-g4O"/>
+                            <constraint firstItem="lb2-pf-ejV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="cfG-Em-wL5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CtV-gc-igb" secondAttribute="trailing" constant="1" id="eGy-uO-3hY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gqy-Aw-pYK" secondAttribute="trailing" constant="10" id="gp5-mN-45C"/>
+                            <constraint firstItem="Bmd-3M-VW3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="lhN-qq-UAQ"/>
+                            <constraint firstItem="gqy-Aw-pYK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="r0R-7A-Qis"/>
+                            <constraint firstItem="gqy-Aw-pYK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="sve-SK-kO8"/>
+                            <constraint firstItem="CtV-gc-igb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="tG7-gN-ihP"/>
+                            <constraint firstItem="Bmd-3M-VW3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="300" id="tVg-Ft-DS4"/>
+                            <constraint firstItem="3br-Bd-QHv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uNF-kj-j9d"/>
+                            <constraint firstItem="zbz-wN-jcO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="xas-kK-gvk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lb2-pf-ejV" secondAttribute="trailing" constant="10" id="zPx-Rx-Uum"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomButton" destination="zbz-wN-jcO" id="9EE-dA-xTy"/>
+                        <outlet property="textStoryLabel" destination="gqy-Aw-pYK" id="neQ-aW-5B8"/>
+                        <outlet property="topButton" destination="lb2-pf-ejV" id="GKg-i7-840"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="505" height="944"/>
+    </resources>
+</document>
