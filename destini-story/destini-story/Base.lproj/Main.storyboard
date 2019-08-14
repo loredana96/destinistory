@@ -77,6 +77,7 @@
                                 <state key="normal" title="Story 1 "/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IAt-IG-BVb"/>
+                                    <action selector="restartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bRF-Um-dMN"/>
                                 </connections>
                             </button>
                         </subviews>

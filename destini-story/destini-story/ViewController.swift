@@ -80,15 +80,17 @@ class ViewController: UIViewController {
             topButton.isHidden = true
             storyindex = 4
         }
-        else if sender.tag == 3 {
-            textStoryLabel.text = story1
-            topButton.setTitle(answer1a, for: .normal)
-            bottomButton.setTitle(answer1b, for: .normal)
-            storyindex = 1
-            topButton.isHidden = false
-            bottomButton.isHidden = false
-        }
-        
+    }
+    @IBAction func restartButton(_ sender: Any) {
+        restart()
+    }
+    func restart() {
+        textStoryLabel.text = story1
+        topButton.setTitle(answer1a, for: .normal)
+        bottomButton.setTitle(answer1b, for: .normal)
+        storyindex = 1
+        topButton.isHidden = false
+        bottomButton.isHidden = false
     }
 }
 
